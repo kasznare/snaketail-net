@@ -191,7 +191,6 @@ namespace SnakeTail
         public string ServiceName { get; set; }
         public string IconFile { get; set; }
         public bool DisplayTabIcon { get; set; }
-        public bool DisplayLineNumbers { get; set; }
         public bool ColumnFilterActive { get; set; }
         [XmlArray("ColumnFilters")]
         [XmlArrayItem("Filters")]

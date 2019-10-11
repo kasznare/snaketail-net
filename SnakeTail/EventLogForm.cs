@@ -38,7 +38,6 @@ namespace SnakeTail
         bool _displayTabIcon;
         bool _topItemIndexHack = false;
         bool _formMinimizedAtBottom = false;
-        bool _displayLineNumbers = false;
 
         public EventLogForm()
         {
@@ -90,7 +89,6 @@ namespace SnakeTail
             }
             tailConfig.ColumnFilterActive = _filterActive;
             tailConfig.DisplayTabIcon = _displayTabIcon;
-            tailConfig.DisplayLineNumbers = _displayLineNumbers;
         }
 
         public void LoadConfig(TailFileConfig tailConfig, string configPath)
@@ -163,7 +161,6 @@ namespace SnakeTail
 
             _filterActive = tailConfig.ColumnFilterActive;
             _displayTabIcon = tailConfig.DisplayTabIcon;
-            _displayLineNumbers = tailConfig.DisplayLineNumbers;
 
             if (Visible)
             {
